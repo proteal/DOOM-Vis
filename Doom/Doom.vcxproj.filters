@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DoomSrc">
+      <UniqueIdentifier>{fa29d55c-1a62-4aa7-95e0-8256300a3c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{1a6b5710-89f4-4f6f-81aa-56b641b813ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinMain">
+      <UniqueIdentifier>{e717d5dd-bd69-4146-a1e7-f67854902e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{046c173d-40fb-4961-892d-b0f6d0b1a8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{abaef82f-c4bf-458d-873b-c31fff583ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3d">
+      <UniqueIdentifier>{8aab066d-48f2-4a36-9b08-d84b95cb4132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinMain\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{dd4e3510-63c3-48db-bf22-831b7b1d1710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xaudio">
+      <UniqueIdentifier>{0e6e487f-1eff-4468-97ae-b4a15c6a0fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wmidi">
+      <UniqueIdentifier>{f0a44556-169b-4219-bece-addd6f955ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{aadfe09c-bd91-421a-ac2e-b0cc498d9aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputWin32">
+      <UniqueIdentifier>{f6a4dd7e-2a06-4396-91cb-a2608a8778fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DoomSrc\am_map.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_englsh.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_event.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_items.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_main.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_net.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_player.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_textur.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_think.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\d_ticcmd.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\doomdata.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\doomdef.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\doomstat.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\doomtype.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\dstrings.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\f_finale.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\f_wipe.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\g_game.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\hu_lib.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\hu_stuff.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\i_net.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\i_sound.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\i_system.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\i_video.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\info.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_argv.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_bbox.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_cheat.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_fixed.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_menu.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_misc.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_random.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\m_swap.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_inter.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_local.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_mobj.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_pspr.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_saveg.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_setup.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_spec.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\p_tick.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_bsp.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_data.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_defs.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_draw.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_local.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_main.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_plane.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_segs.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_sky.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_state.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\r_things.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\s_sound.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\sounds.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\st_lib.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\st_stuff.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\tables.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\v_video.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\w_wad.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\wi_stuff.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\z_zone.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CoreIncludes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Global.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain\Win32.h">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="App\App.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="App\AppIncludes.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PerfClock.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ConstBuffer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ConstBufferMember.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ConstBuffers.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Material.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\MaterialInst.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Materials.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Primitive.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RendererDefs.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RendererIncludes.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderTarget.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Sampler.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Samplers.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ScreenQuad.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ShaderVar.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\ShaderVarTexture.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Texture.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\TextureWriter.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertBuffer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertDesc.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertDescs.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertLayout.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3d.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dConstBuffer.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dDefs.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dIncludes.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dMaterial.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dMaterialInclude.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dMaterialReflect.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dPrimitive.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dRenderTarget.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dSampler.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dTexture.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dVertBuffer.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dVertDesc.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dVertLayout.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DataFile.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ComPtr.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Thread.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="App\DoomInstance.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="App\DoomExecScope.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="WinMain\Resource.h">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain\targetver.h">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\Audio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioIncludes.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\StreamBuffers.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Xaudio\XAudio.h">
+      <Filter>Xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="Xaudio\XAudioIncludes.h">
+      <Filter>Xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="Xaudio\XaVoiceCallback.h">
+      <Filter>Xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SourceVoice.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Xaudio\XaSourceVoice.h">
+      <Filter>Xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="Xaudio\XaDefs.h">
+      <Filter>Xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioDefs.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\MusConvert.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\MusicStream.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SourceVoiceSfx.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SourceVoiceMusic.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Wmidi\Wmidi.h">
+      <Filter>Wmidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Wmidi\WmidiIncludes.h">
+      <Filter>Wmidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\MidiTrack.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Wmidi\WmidiTrack.h">
+      <Filter>Wmidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputIncludes.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWin32\InputWin32.h">
+      <Filter>InputWin32</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWin32\InputWin32Includes.h">
+      <Filter>InputWin32</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWin32\InputWin32Defs.h">
+      <Filter>InputWin32</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputDefs.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="App\AppDefs.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\FrameData.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\WallMesh.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RasterState.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RasterStates.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dRasterState.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\DepthStencil.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dDepthStencil.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputEvents.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputState.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\CamMesh.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\IndexBuffer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dIndexBuffer.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWin32\Win32InputListener.h">
+      <Filter>InputWin32</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomSrc\DoomCallbacks.h">
+      <Filter>DoomSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\LibMidi.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\LibAudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CoreDefs.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\LibInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputListener.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputCallbacks.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\LibRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderGlobal.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\BlendState.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\BlendStates.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dBlendState.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="D3d\D3dDepthState.h">
+      <Filter>D3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\DepthState.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\DepthStates.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\LineMesh.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DoomSrc\am_map.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\d_main.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\d_items.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\d_net.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\doomstat.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\dstrings.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\f_finale.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\f_wipe.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\g_game.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\hu_lib.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\hu_stuff.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\i_net.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\i_sound.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\i_system.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\i_video.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\info.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_argv.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_bbox.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_cheat.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_fixed.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_menu.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_misc.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_random.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\m_swap.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_ceilng.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_doors.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_enemy.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_floor.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_inter.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_lights.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_map.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_maputl.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_mobj.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_plats.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_pspr.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_saveg.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_setup.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_sight.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_spec.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_switch.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_telept.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_tick.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\p_user.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_bsp.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_data.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_draw.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_main.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_plane.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_segs.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_sky.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\r_things.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\s_sound.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\sounds.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\st_lib.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\st_stuff.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\tables.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\v_video.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\w_wad.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\wi_stuff.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomSrc\z_zone.cpp">
+      <Filter>DoomSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain\stdafx.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain\WinMain.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="WinMain\Doom.ico">
+      <Filter>WinMain\Resource Files</Filter>
+    </Image>
+    <Image Include="WinMain\small.ico">
+      <Filter>WinMain\Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinMain\Doom.rc">
+      <Filter>WinMain\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

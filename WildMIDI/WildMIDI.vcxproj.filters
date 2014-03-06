@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="file_io.h" />
+    <ClInclude Include="gus_pat.h" />
+    <ClInclude Include="lock.h" />
+    <ClInclude Include="reverb.h" />
+    <ClInclude Include="wildmidi_lib.h" />
+    <ClInclude Include="wm_error.h" />
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file_io.c" />
+    <ClCompile Include="gus_pat.c" />
+    <ClCompile Include="lock.c" />
+    <ClCompile Include="reverb.c" />
+    <ClCompile Include="wildmidi_lib.c" />
+    <ClCompile Include="wm_error.c" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12ACAC24-114E-4FCC-80BC-57A51218A4FE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Doom</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropsShared.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropsShared.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="App\App.h" />
+    <ClInclude Include="App\AppDefs.h" />
+    <ClInclude Include="App\AppIncludes.h" />
+    <ClInclude Include="App\DoomInstance.h" />
+    <ClInclude Include="App\DoomExecScope.h" />
+    <ClInclude Include="Audio\Audio.h" />
+    <ClInclude Include="Audio\AudioDefs.h" />
+    <ClInclude Include="Audio\AudioIncludes.h" />
+    <ClInclude Include="Audio\LibAudio.h" />
+    <ClInclude Include="Audio\LibMidi.h" />
+    <ClInclude Include="Audio\MidiTrack.h" />
+    <ClInclude Include="Audio\MusConvert.h" />
+    <ClInclude Include="Audio\MusicStream.h" />
+    <ClInclude Include="Audio\SourceVoice.h" />
+    <ClInclude Include="Audio\SourceVoiceMusic.h" />
+    <ClInclude Include="Audio\SourceVoiceSfx.h" />
+    <ClInclude Include="Audio\StreamBuffers.h" />
+    <ClInclude Include="Core\ComPtr.h" />
+    <ClInclude Include="Core\CoreDefs.h" />
+    <ClInclude Include="Core\CoreIncludes.h" />
+    <ClInclude Include="Core\DataFile.h" />
+    <ClInclude Include="Core\Global.h" />
+    <ClInclude Include="Core\PerfClock.h" />
+    <ClInclude Include="Core\System.h" />
+    <ClInclude Include="Core\Thread.h" />
+    <ClInclude Include="D3d\D3d.h" />
+    <ClInclude Include="D3d\D3dBlendState.h" />
+    <ClInclude Include="D3d\D3dConstBuffer.h" />
+    <ClInclude Include="D3d\D3dDefs.h" />
+    <ClInclude Include="D3d\D3dDepthState.h" />
+    <ClInclude Include="D3d\D3dDepthStencil.h" />
+    <ClInclude Include="D3d\D3dIncludes.h" />
+    <ClInclude Include="D3d\D3dIndexBuffer.h" />
+    <ClInclude Include="D3d\D3dMaterial.h" />
+    <ClInclude Include="D3d\D3dMaterialInclude.h" />
+    <ClInclude Include="D3d\D3dMaterialReflect.h" />
+    <ClInclude Include="D3d\D3dPrimitive.h" />
+    <ClInclude Include="D3d\D3dRasterState.h" />
+    <ClInclude Include="D3d\D3dRenderTarget.h" />
+    <ClInclude Include="D3d\D3dSampler.h" />
+    <ClInclude Include="D3d\D3dTexture.h" />
+    <ClInclude Include="D3d\D3dVertBuffer.h" />
+    <ClInclude Include="D3d\D3dVertDesc.h" />
+    <ClInclude Include="D3d\D3dVertLayout.h" />
+    <ClInclude Include="DoomSrc\am_map.h" />
+    <ClInclude Include="DoomSrc\DoomCallbacks.h" />
+    <ClInclude Include="DoomSrc\doomdata.h" />
+    <ClInclude Include="DoomSrc\doomdef.h" />
+    <ClInclude Include="DoomSrc\doomstat.h" />
+    <ClInclude Include="DoomSrc\doomtype.h" />
+    <ClInclude Include="DoomSrc\dstrings.h" />
+    <ClInclude Include="DoomSrc\d_englsh.h" />
+    <ClInclude Include="DoomSrc\d_event.h" />
+    <ClInclude Include="DoomSrc\d_items.h" />
+    <ClInclude Include="DoomSrc\d_main.h" />
+    <ClInclude Include="DoomSrc\d_net.h" />
+    <ClInclude Include="DoomSrc\d_player.h" />
+    <ClInclude Include="DoomSrc\d_textur.h" />
+    <ClInclude Include="DoomSrc\d_think.h" />
+    <ClInclude Include="DoomSrc\d_ticcmd.h" />
+    <ClInclude Include="DoomSrc\f_finale.h" />
+    <ClInclude Include="DoomSrc\f_wipe.h" />
+    <ClInclude Include="DoomSrc\g_game.h" />
+    <ClInclude Include="DoomSrc\hu_lib.h" />
+    <ClInclude Include="DoomSrc\hu_stuff.h" />
+    <ClInclude Include="DoomSrc\info.h" />
+    <ClInclude Include="DoomSrc\i_net.h" />
+    <ClInclude Include="DoomSrc\i_sound.h" />
+    <ClInclude Include="DoomSrc\i_system.h" />
+    <ClInclude Include="DoomSrc\i_video.h" />
+    <ClInclude Include="DoomSrc\m_argv.h" />
+    <ClInclude Include="DoomSrc\m_bbox.h" />
+    <ClInclude Include="DoomSrc\m_cheat.h" />
+    <ClInclude Include="DoomSrc\m_fixed.h" />
+    <ClInclude Include="DoomSrc\m_menu.h" />
+    <ClInclude Include="DoomSrc\m_misc.h" />
+    <ClInclude Include="DoomSrc\m_random.h" />
+    <ClInclude Include="DoomSrc\m_swap.h" />
+    <ClInclude Include="DoomSrc\p_inter.h" />
+    <ClInclude Include="DoomSrc\p_local.h" />
+    <ClInclude Include="DoomSrc\p_mobj.h" />
+    <ClInclude Include="DoomSrc\p_pspr.h" />
+    <ClInclude Include="DoomSrc\p_saveg.h" />
+    <ClInclude Include="DoomSrc\p_setup.h" />
+    <ClInclude Include="DoomSrc\p_spec.h" />
+    <ClInclude Include="DoomSrc\p_tick.h" />
+    <ClInclude Include="DoomSrc\r_bsp.h" />
+    <ClInclude Include="DoomSrc\r_data.h" />
+    <ClInclude Include="DoomSrc\r_defs.h" />
+    <ClInclude Include="DoomSrc\r_draw.h" />
+    <ClInclude Include="DoomSrc\r_local.h" />
+    <ClInclude Include="DoomSrc\r_main.h" />
+    <ClInclude Include="DoomSrc\r_plane.h" />
+    <ClInclude Include="DoomSrc\r_segs.h" />
+    <ClInclude Include="DoomSrc\r_sky.h" />
+    <ClInclude Include="DoomSrc\r_state.h" />
+    <ClInclude Include="DoomSrc\r_things.h" />
+    <ClInclude Include="DoomSrc\sounds.h" />
+    <ClInclude Include="DoomSrc\st_lib.h" />
+    <ClInclude Include="DoomSrc\st_stuff.h" />
+    <ClInclude Include="DoomSrc\s_sound.h" />
+    <ClInclude Include="DoomSrc\tables.h" />
+    <ClInclude Include="DoomSrc\v_video.h" />
+    <ClInclude Include="DoomSrc\wi_stuff.h" />
+    <ClInclude Include="DoomSrc\w_wad.h" />
+    <ClInclude Include="DoomSrc\z_zone.h" />
+    <ClInclude Include="InputWin32\InputWin32.h" />
+    <ClInclude Include="InputWin32\InputWin32Defs.h" />
+    <ClInclude Include="InputWin32\InputWin32Includes.h" />
+    <ClInclude Include="InputWin32\Win32InputListener.h" />
+    <ClInclude Include="Input\Input.h" />
+    <ClInclude Include="Input\InputCallbacks.h" />
+    <ClInclude Include="Input\InputDefs.h" />
+    <ClInclude Include="Input\InputEvents.h" />
+    <ClInclude Include="Input\InputIncludes.h" />
+    <ClInclude Include="Input\InputListener.h" />
+    <ClInclude Include="Input\InputState.h" />
+    <ClInclude Include="Input\LibInput.h" />
+    <ClInclude Include="Renderer\BlendState.h" />
+    <ClInclude Include="Renderer\BlendStates.h" />
+    <ClInclude Include="Renderer\CamMesh.h" />
+    <ClInclude Include="Renderer\ConstBuffer.h" />
+    <ClInclude Include="Renderer\ConstBufferMember.h" />
+    <ClInclude Include="Renderer\ConstBuffers.h" />
+    <ClInclude Include="Renderer\DepthState.h" />
+    <ClInclude Include="Renderer\DepthStates.h" />
+    <ClInclude Include="Renderer\DepthStencil.h" />
+    <ClInclude Include="Renderer\IndexBuffer.h" />
+    <ClInclude Include="Renderer\LibRenderer.h" />
+    <ClInclude Include="Renderer\LineMesh.h" />
+    <ClInclude Include="Renderer\Material.h" />
+    <ClInclude Include="Renderer\MaterialInst.h" />
+    <ClInclude Include="Renderer\Materials.h" />
+    <ClInclude Include="Renderer\FrameData.h" />
+    <ClInclude Include="Renderer\Primitive.h" />
+    <ClInclude Include="Renderer\RasterState.h" />
+    <ClInclude Include="Renderer\RasterStates.h" />
+    <ClInclude Include="Renderer\Renderer.h" />
+    <ClInclude Include="Renderer\RendererDefs.h" />
+    <ClInclude Include="Renderer\RendererIncludes.h" />
+    <ClInclude Include="Renderer\RenderGlobal.h" />
+    <ClInclude Include="Renderer\RenderTarget.h" />
+    <ClInclude Include="Renderer\Sampler.h" />
+    <ClInclude Include="Renderer\Samplers.h" />
+    <ClInclude Include="Renderer\ScreenQuad.h" />
+    <ClInclude Include="Renderer\ShaderVar.h" />
+    <ClInclude Include="Renderer\ShaderVarTexture.h" />
+    <ClInclude Include="Renderer\Texture.h" />
+    <ClInclude Include="Renderer\TextureWriter.h" />
+    <ClInclude Include="Renderer\VertBuffer.h" />
+    <ClInclude Include="Renderer\VertDesc.h" />
+    <ClInclude Include="Renderer\VertDescs.h" />
+    <ClInclude Include="Renderer\VertLayout.h" />
+    <ClInclude Include="Renderer\WallMesh.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="WinMain\Resource.h" />
+    <ClInclude Include="WinMain\targetver.h" />
+    <ClInclude Include="WinMain\Win32.h" />
+    <ClInclude Include="Wmidi\Wmidi.h" />
+    <ClInclude Include="Wmidi\WmidiIncludes.h" />
+    <ClInclude Include="Wmidi\WmidiTrack.h" />
+    <ClInclude Include="Xaudio\XaDefs.h" />
+    <ClInclude Include="Xaudio\XaSourceVoice.h" />
+    <ClInclude Include="Xaudio\XAudio.h" />
+    <ClInclude Include="Xaudio\XAudioIncludes.h" />
+    <ClInclude Include="Xaudio\XaVoiceCallback.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DoomSrc\am_map.cpp" />
+    <ClCompile Include="DoomSrc\doomstat.cpp" />
+    <ClCompile Include="DoomSrc\dstrings.cpp" />
+    <ClCompile Include="DoomSrc\d_items.cpp" />
+    <ClCompile Include="DoomSrc\d_main.cpp" />
+    <ClCompile Include="DoomSrc\d_net.cpp" />
+    <ClCompile Include="DoomSrc\f_finale.cpp" />
+    <ClCompile Include="DoomSrc\f_wipe.cpp" />
+    <ClCompile Include="DoomSrc\g_game.cpp" />
+    <ClCompile Include="DoomSrc\hu_lib.cpp" />
+    <ClCompile Include="DoomSrc\hu_stuff.cpp" />
+    <ClCompile Include="DoomSrc\info.cpp" />
+    <ClCompile Include="DoomSrc\i_net.cpp" />
+    <ClCompile Include="DoomSrc\i_sound.cpp" />
+    <ClCompile Include="DoomSrc\i_system.cpp" />
+    <ClCompile Include="DoomSrc\i_video.cpp" />
+    <ClCompile Include="DoomSrc\m_argv.cpp" />
+    <ClCompile Include="DoomSrc\m_bbox.cpp" />
+    <ClCompile Include="DoomSrc\m_cheat.cpp" />
+    <ClCompile Include="DoomSrc\m_fixed.cpp" />
+    <ClCompile Include="DoomSrc\m_menu.cpp" />
+    <ClCompile Include="DoomSrc\m_misc.cpp" />
+    <ClCompile Include="DoomSrc\m_random.cpp" />
+    <ClCompile Include="DoomSrc\m_swap.cpp" />
+    <ClCompile Include="DoomSrc\p_ceilng.cpp" />
+    <ClCompile Include="DoomSrc\p_doors.cpp" />
+    <ClCompile Include="DoomSrc\p_enemy.cpp" />
+    <ClCompile Include="DoomSrc\p_floor.cpp" />
+    <ClCompile Include="DoomSrc\p_inter.cpp" />
+    <ClCompile Include="DoomSrc\p_lights.cpp" />
+    <ClCompile Include="DoomSrc\p_map.cpp" />
+    <ClCompile Include="DoomSrc\p_maputl.cpp" />
+    <ClCompile Include="DoomSrc\p_mobj.cpp" />
+    <ClCompile Include="DoomSrc\p_plats.cpp" />
+    <ClCompile Include="DoomSrc\p_pspr.cpp" />
+    <ClCompile Include="DoomSrc\p_saveg.cpp" />
+    <ClCompile Include="DoomSrc\p_setup.cpp" />
+    <ClCompile Include="DoomSrc\p_sight.cpp" />
+    <ClCompile Include="DoomSrc\p_spec.cpp" />
+    <ClCompile Include="DoomSrc\p_switch.cpp" />
+    <ClCompile Include="DoomSrc\p_telept.cpp" />
+    <ClCompile Include="DoomSrc\p_tick.cpp" />
+    <ClCompile Include="DoomSrc\p_user.cpp" />
+    <ClCompile Include="DoomSrc\r_bsp.cpp" />
+    <ClCompile Include="DoomSrc\r_data.cpp" />
+    <ClCompile Include="DoomSrc\r_draw.cpp" />
+    <ClCompile Include="DoomSrc\r_main.cpp" />
+    <ClCompile Include="DoomSrc\r_plane.cpp" />
+    <ClCompile Include="DoomSrc\r_segs.cpp" />
+    <ClCompile Include="DoomSrc\r_sky.cpp" />
+    <ClCompile Include="DoomSrc\r_things.cpp" />
+    <ClCompile Include="DoomSrc\sounds.cpp" />
+    <ClCompile Include="DoomSrc\st_lib.cpp" />
+    <ClCompile Include="DoomSrc\st_stuff.cpp" />
+    <ClCompile Include="DoomSrc\s_sound.cpp" />
+    <ClCompile Include="DoomSrc\tables.cpp" />
+    <ClCompile Include="DoomSrc\v_video.cpp" />
+    <ClCompile Include="DoomSrc\wi_stuff.cpp" />
+    <ClCompile Include="DoomSrc\w_wad.cpp" />
+    <ClCompile Include="DoomSrc\z_zone.cpp" />
+    <ClCompile Include="WinMain\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WinMain\WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="WinMain\Doom.ico" />
+    <Image Include="WinMain\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinMain\Doom.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WildMIDI\WildMIDI.vcxproj">
+      <Project>{9d81f08a-3017-40a3-8ce4-235506a22530}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

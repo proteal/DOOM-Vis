@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Doom", "Doom\Doom.vcxproj", "{12ACAC24-114E-4FCC-80BC-57A51218A4FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D81F08A-3017-40A3-8CE4-235506A22530} = {9D81F08A-3017-40A3-8CE4-235506A22530}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WildMIDI", "WildMIDI\WildMIDI.vcxproj", "{9D81F08A-3017-40A3-8CE4-235506A22530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12ACAC24-114E-4FCC-80BC-57A51218A4FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12ACAC24-114E-4FCC-80BC-57A51218A4FE}.Debug|Win32.Build.0 = Debug|Win32
+		{12ACAC24-114E-4FCC-80BC-57A51218A4FE}.Release|Win32.ActiveCfg = Release|Win32
+		{12ACAC24-114E-4FCC-80BC-57A51218A4FE}.Release|Win32.Build.0 = Release|Win32
+		{9D81F08A-3017-40A3-8CE4-235506A22530}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D81F08A-3017-40A3-8CE4-235506A22530}.Debug|Win32.Build.0 = Debug|Win32
+		{9D81F08A-3017-40A3-8CE4-235506A22530}.Release|Win32.ActiveCfg = Release|Win32
+		{9D81F08A-3017-40A3-8CE4-235506A22530}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
